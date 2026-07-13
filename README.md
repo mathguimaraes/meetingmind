@@ -26,7 +26,7 @@ Most recording tools make this worse, not better — they need you to remember t
 
 MeetingMind sits quietly in your menu bar and handles the whole thing without being asked:
 
-- **Notices you're in a meeting and starts recording on its own.** No button to remember, no "oh no, was this being recorded" moment.
+- **Notices you're in a meeting and starts recording on its own — in *any* app.** It's not a Zoom/Meet/Teams integration with a fixed list of supported apps; it listens for the mic + system-audio pattern of an actual conversation. That means it works the same way for Google Meet, Zoom, Microsoft Teams, Webex, Slack huddles, Discord, FaceTime, WhatsApp calls, or a phone call relayed to your Mac — anything with two-way audio, no setup per app. No button to remember, no "oh no, was this being recorded" moment.
 - **Transcribes it entirely on your Mac.** [WhisperKit](https://github.com/argmaxinc/WhisperKit) runs on the Apple Silicon Neural Engine — audio never leaves your machine.
 - **Knows what you said vs. what everyone else said.** Mic and system audio are captured and split separately, so summaries and insights are attributed to the right person.
 - **Turns the transcript into something useful** — a title, a bullet summary, action items, and (optionally) an honest read on how you performed in that specific conversation, whether it was a 1:1, a client call, or a design review.
@@ -36,6 +36,7 @@ You bring your own [Gemini API key](https://aistudio.google.com/apikey) for the 
 
 ## Why it's built this way
 
+- **App-agnostic by design.** Most meeting recorders only work with a couple of big-name apps because they integrate against each one's SDK. MeetingMind instead captures at the system audio level — every app that makes sound on your Mac is fair game, so it doesn't matter what your team, your client, or your family standardized on.
 - **Local-first.** Recording and transcription happen on your Mac regardless of whether you ever add an API key. The only thing that can leave your machine is a text transcript, and only if you turn cloud summaries on.
 - **No accounts, no subscription.** It's a native app, not a SaaS wrapper. You own the DMG, you own your data.
 - **Built for how meetings actually go.** False starts (music, a stray voice message) don't turn into phantom recordings; a dropped mic mid-call doesn't silently lose half your transcript.
