@@ -1,18 +1,18 @@
 <div align="center">
 
-<img src="icon.png" width="128" height="128" alt="MeetingMind icon">
+<img src="icon.png" width="128" height="128" alt="Routine Meeting icon">
 
-# MeetingMind
+# Routine Meeting
 
 **Meetings happen. Notes shouldn't require you to take them.**
 
-[Download for macOS](https://github.com/mathguimaraes/meetingmind/releases/latest) · Apple Silicon · macOS 13+
+[Download for macOS](https://github.com/mathguimaraes/routine-meeting/releases/latest) · Apple Silicon · macOS 13+
 
 </div>
 
 ---
 
-> **🚧 Beta.** MeetingMind works and I use it daily, but it's early — expect rough edges, and please [report anything odd](https://github.com/mathguimaraes/meetingmind/issues). Best suited for people comfortable with that: developers, early adopters, anyone who wants to try it and doesn't need it to be perfect on day one.
+> **🚧 Beta.** Routine Meeting works and I use it daily, but it's early — expect rough edges, and please [report anything odd](https://github.com/mathguimaraes/routine-meeting/issues). Best suited for people comfortable with that: developers, early adopters, anyone who wants to try it and doesn't need it to be perfect on day one.
 
 ---
 
@@ -22,9 +22,9 @@ You join a call, and the second it gets interesting you have to choose: pay atte
 
 Most recording tools make this worse, not better — they need you to remember to press start, they dump raw audio to some server, and half of them can't tell your voice from everyone else's.
 
-## What MeetingMind does
+## What Routine Meeting does
 
-MeetingMind sits quietly in your menu bar and handles the whole thing without being asked:
+Routine Meeting sits quietly in your menu bar and handles the whole thing without being asked:
 
 - **Notices you're in a meeting and starts recording on its own — in *any* app.** It's not a Zoom/Meet/Teams integration with a fixed list of supported apps; it listens for the mic + system-audio pattern of an actual conversation. That means it works the same way for Google Meet, Zoom, Microsoft Teams, Webex, Slack huddles, Discord, FaceTime, WhatsApp calls, or a phone call relayed to your Mac — anything with two-way audio, no setup per app. No button to remember, no "oh no, was this being recorded" moment.
 - **Transcribes it entirely on your Mac.** [WhisperKit](https://github.com/argmaxinc/WhisperKit) runs on the Apple Silicon Neural Engine — audio never leaves your machine.
@@ -36,19 +36,19 @@ You bring your own [Gemini API key](https://aistudio.google.com/apikey) for the 
 
 ## Why it's built this way
 
-- **App-agnostic by design.** Most meeting recorders only work with a couple of big-name apps because they integrate against each one's SDK. MeetingMind instead captures at the system audio level — every app that makes sound on your Mac is fair game, so it doesn't matter what your team, your client, or your family standardized on.
+- **App-agnostic by design.** Most meeting recorders only work with a couple of big-name apps because they integrate against each one's SDK. Routine Meeting instead captures at the system audio level — every app that makes sound on your Mac is fair game, so it doesn't matter what your team, your client, or your family standardized on.
 - **Local-first.** Recording and transcription happen on your Mac regardless of whether you ever add an API key. The only thing that can leave your machine is a text transcript, and only if you turn cloud summaries on.
 - **No accounts, no subscription.** It's a native app, not a SaaS wrapper. You own the DMG, you own your data.
 - **Built for how meetings actually go.** False starts (music, a stray voice message) don't turn into phantom recordings; a dropped mic mid-call doesn't silently lose half your transcript.
 
 ## Install
 
-1. Download the latest `MeetingMind.dmg` from [Releases](https://github.com/mathguimaraes/meetingmind/releases/latest).
-2. Open the DMG and drag **MeetingMind** into **Applications**.
+1. Download the latest `RoutineMeeting.dmg` from [Releases](https://github.com/mathguimaraes/routine-meeting/releases/latest).
+2. Open the DMG and drag **Routine Meeting** into **Applications**.
 3. Launch it. macOS will ask for **Microphone** and **Screen Recording** permission — the latter is what captures other participants' audio and triggers the purple recording-indicator dot; that's expected and required.
 4. Menu bar icon → **Settings** to add a Gemini API key. Optional — only needed for cloud AI summaries; recording and local transcription work with no key at all.
 
-MeetingMind checks for updates automatically (via [Sparkle](https://sparkle-project.org)) and notifies you in-app when a new version is ready.
+Routine Meeting checks for updates automatically (via [Sparkle](https://sparkle-project.org)) and notifies you in-app when a new version is ready.
 
 ## Privacy
 
@@ -56,4 +56,4 @@ Audio and transcripts stay on your Mac. Nothing is sent anywhere unless you turn
 
 ## Feedback / Issues
 
-Menu bar icon → **Send Feedback…** in the app, or open an [issue](https://github.com/mathguimaraes/meetingmind/issues) here.
+Menu bar icon → **Send Feedback…** in the app, or open an [issue](https://github.com/mathguimaraes/routine-meeting/issues) here.
