@@ -45,8 +45,10 @@ You bring your own [Gemini API key](https://aistudio.google.com/apikey) for the 
 
 1. Download the latest `RoutineMeeting.dmg` from [Releases](https://github.com/mathguimaraes/routine-meeting/releases/latest).
 2. Open the DMG and drag **Routine Meeting** into **Applications**.
-3. Launch it. macOS will ask for **Microphone** and **Screen Recording** permission — the latter is what captures other participants' audio and triggers the purple recording-indicator dot; that's expected and required.
-4. Menu bar icon → **Settings** to add a Gemini API key. Optional — only needed for cloud AI summaries; recording and local transcription work with no key at all.
+3. Launch it. A short setup guide walks you through each permission — why it's needed, then the system prompt (Microphone, Screen Recording, Launch at Login, Accessibility, Notifications) — and lets you add a Gemini key or skip to on-device mode. The Screen Recording step is what captures other participants' audio and triggers the purple recording-indicator dot; that's expected and required.
+4. Re-run this guide anytime from the menu bar icon → **Setup Guide…**.
+
+Recordings older than 7 days are deleted automatically once they're transcribed (transcripts/summaries are kept forever) — configurable in Settings → Storage, with a manual "Free Up Space Now" button.
 
 Routine Meeting checks for updates automatically (via [Sparkle](https://sparkle-project.org)) and notifies you in-app when a new version is ready.
 
