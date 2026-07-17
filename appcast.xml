@@ -3,6 +3,15 @@
     <channel>
         <title>Routine Meeting</title>
         <item>
+            <title>1.2</title>
+            <pubDate>Fri, 17 Jul 2026 08:09:30 -0300</pubDate>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>1.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/mathguimaraes/routine-meeting/releases/download/v1.2/RoutineMeeting.dmg" length="62443887" type="application/octet-stream" sparkle:edSignature="dexVR4t1uFmH6GXszzfQSLWrTAz8JDANQ9xbW5jqrWTMBxWuDWcC8kQKarkq/5E8Y2FK3OXs2zsUGwj38KNhCw=="/>
+        </item>
+        <item>
             <title>1.1</title>
             <pubDate>Thu, 16 Jul 2026 15:50:40 -0300</pubDate>
             <sparkle:version>2</sparkle:version>
